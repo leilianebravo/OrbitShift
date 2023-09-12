@@ -30,11 +30,155 @@
 
 }
 
+.
 .left > h1{
+    
+
     color: #77ffc0;
+
 }
+.left > h2{
+
+    color: red
+} 
 
 img{
+    
     max-height: 80%;
     min-height: 60%;
+
+}
+
+.right{
+    /*Lado direito da página*/
+    
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+  /* Modificando o card: tamanho, espaçamento interno, convertendo caixas de
+  funcionamento em linha para colunas.*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #77ffc0;
+    
+}
+
+.card > h1{
+    /*
+    Modificando 'LOGIN' do lado direito(Right)
+    */
+    color: #77ffc0;
+    font-weight: 800;
+}
+
+
+.textfield{
+    /*
+    Modificando as caixas de usuário e login.
+    Display flex <- Trabalhar com os conteúdo da caixa em colunas em vez de linhas
+    Flex-Diretion: coluna <- coloque os contúdos na ordem das colunas
+    align itens:  flex start <- começar com o conteúdo da esquerda para direita.
+    */
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+input{
+    /*Input <- caixa que recebe o os dados do usuário*/
+
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    outline: none;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #ff777754;
+    border: 2px solid transparent;
+}
+
+input::placeholder{
+    /*mudar a cor da escrita dentro do input*/
+    color: #f0ffff94;
+}
+
+input:focus{
+
+    border-color: #77ffc0
+}
+label{
+    /*
+    modificando usuário e senha
+     */
+    color: #f0ffffde;
+    margin: 10px;
+
+}
+
+.btn-login{
+    /*Modificando Botão de login*/
+    width: 100%;
+    margin: 25px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2b133b;
+    background: #00ff88;
+    cursor: pointer;
+    letter-spacing: 4px;
+    box-shadow: 0px 10px 40px #00008052;
+
+}
+
+.btn-login:hover{
+    transition: background 0.1s;
+    background: #90ffc9
+}
+
+#rodape{
+    background: rgba(255, 0, 0, 0.705);
+    margin: 0px;
+    padding: 5px;
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#descrição > h2{
+    
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+#life{
+    color: white;
+}
+
+#dead{
+    color: black;
 }
